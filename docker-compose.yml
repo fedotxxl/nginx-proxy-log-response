@@ -1,0 +1,7 @@
+otm-nginx-proxy:
+  container_name: otm-nginx-proxy
+  image: danday74/nginx-lua
+  net: host
+  volumes:
+    - ./nginx.conf:/nginx/conf/nginx.conf
+    - ./log:/nginx/access-log/
